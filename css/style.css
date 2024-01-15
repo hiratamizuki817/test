@@ -5,7 +5,7 @@ html {
 body {
     position: relative;
     width: 100%;
-    max-width: 1400px;
+    /*max-width: 1400px;*/
     margin: auto;
 }
 
@@ -72,7 +72,7 @@ img {
 }
 
 .back_img {
-    width: 60%;
+    width: 56%;
 }
 
 .back_img_7 {
@@ -709,7 +709,7 @@ img {
 }
 
 .footer_contents {
-    width: 82%;
+    width: 80%;
     display: flex;
     padding: 4% 0 4% 4%;
     justify-content: space-around;
@@ -733,32 +733,9 @@ img {
     text-decoration: none;
 }
 
-.top_button_contents {
-    width: 18%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.top_button {
-    width: 50%;
-}
-
-.top_button img:last-child {
-    display: none;
-}
-
-.top_button:hover img:first-child {
-    display: none;
-}
-
-.top_button:hover img:last-child {
-    display: block;
-}
-
 .copyright {
     text-align: right;
-    padding: 0 2% 0 0;
+    padding: 0 2% 8px 0;
     font-size: 1vw;
     line-height: 1;
     letter-spacing: 0.1em;
@@ -776,9 +753,47 @@ img {
 }
 
 /**
+* フローティングボタン
+*/
+.floating-banner {
+    position: fixed;
+    z-index: 10;
+    bottom: 4vw;
+    right: 4vw;
+    width: 14vw;
+    max-width: 88px;
+    opacity: 0;
+    transition: all 500ms 0s ease;
+    transform: translateY(10%);
+    pointer-events: none;
+}
+
+.floating-banner img {
+    max-width: 100%;
+}
+
+.floating-banner.show {
+    opacity: 1;
+    transform: translateY(0%);
+    pointer-events: auto;
+}
+
+.top_button img:last-child {
+    display: none;
+}
+
+.top_button:hover img:first-child {
+    display: none;
+}
+
+.top_button:hover img:last-child {
+    display: block;
+}
+
+/**
 * sp版の表示切り替え設定
 */
-@media (max-width: 750px) {
+@media screen and (max-width: 750px) {
     body {
         position: relative;
         width: 100%;
@@ -808,6 +823,18 @@ img {
 
     .back_img_top_area {
         height: auto;
+    }
+
+    .back_img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .back_img_bottom_area {
+        display: flex;
+        justify-content: flex-end;
+        padding: 54vw 0 0;
+        height: 4%;
     }
 
     .contact_button {
@@ -1044,11 +1071,39 @@ img {
         font-size: 2vw;
     }
 
-    .top_button_contents {
-        width: 30%;
+    .floating-banner {
+        bottom: 2vw;
+        right: 2vw;
     }
 
-    .top_button {
-        width: 60%;
+    .floating-banner img:first-child {
+        display: none;
+    }
+
+    .floating-banner img:last-child {
+        display: block;
+    }
+
+}
+
+/**
+* 画面が大きい時の微調整
+*/
+@media screen and (min-width: 1300px) {
+    .back_img_bottom_area {
+        padding: 1.25% 0 0;
+    }
+
+    .copyright {
+        transform: translate(0, 20px);
+    }
+
+    .footer_contents {
+        padding: 0 0 0% 4%;
+    }
+
+    .floating-banner {
+        bottom: 5vw;
+        right: 5vw;
     }
 }
