@@ -75,3 +75,22 @@ $(function () {
         back_img_element5.style.transform = `translate(0, -${winScroll * 0.05}%)`;
     });
 })
+
+/**
+ * フローティングボタンの設定
+ */
+beforePos = 0;
+$(window).on('load scroll', function () {
+    var elemTop = $('#Message').offset().top;
+    var scroll = $(window).scrollTop();
+    // 表示・非表示設定
+    if (scroll == beforePos) {
+
+    } else if (elemTop > scroll) {
+        $('.floating-banner').removeClass("show");
+    } else {
+        $('.floating-banner').addClass("show");
+    }
+
+    beforePos = scroll;//現在のスクロール値を比較用のbeforePosに格納
+});
