@@ -35,6 +35,35 @@ img {
     margin: auto 0;
     display: flex;
     justify-content: flex-end;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.contact_button span {
+    position: relative;
+    padding: 0 8px 0 4px;
+    font-weight: 400;
+}
+
+.contact_button span::after {
+    position: absolute;
+    content: "〇";
+    right: 0px;
+}
+
+.contact_button a {
+    color: #000;
+    text-decoration: none;
+    padding: 4px 0;
+    box-shadow: 0 1px black;
+}
+
+.pc.contact_button {
+    display: block;
+}
+
+.sp.contact_button {
+    display: none;
 }
 
 .contants_base {
@@ -950,6 +979,20 @@ img {
     .menu-content ul li a {
         font-size: 6vw;
         padding: 2% 8%;
+    }
+
+    .pc.contact_button {
+        display: none;
+    }
+
+    .sp.contact_button {
+        display: block;
+        padding: 2% 8%;
+        font-size: 6vw;
+    }
+
+    .sp.contact_button span {
+        padding: 0 8px 0 8px;
     }
 
     .top_contents>div:first-child {
