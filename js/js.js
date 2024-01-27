@@ -94,3 +94,25 @@ $(window).on('load scroll', function () {
 
     beforePos = scroll;//現在のスクロール値を比較用のbeforePosに格納
 });
+
+
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const weeks = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+function SetTime() {
+    var timeobj = document.getElementsByClassName("time_text");
+
+    var now = new Date()
+    var nowyear = now.getFullYear()
+    var week = weeks[now.getDay()];
+    var month = months[(now.getMonth())];
+    var day = ('0' + now.getDate()).slice(-2);
+    var nowhour = ('0' + now.getHours()).slice(-2);
+    var nowminutes = ('0' + now.getMinutes()).slice(-2);
+    var nowseconds = ('0' + now.getSeconds()).slice(-2);
+
+    text = week + " " + day + " " + month + "," + nowyear + " " + nowhour + "：" + nowminutes + "：" + nowseconds;
+    timeobj[0].innerHTML = text;
+    timeobj[1].innerHTML = text;
+}
+
+setInterval(SetTime, 1000);
