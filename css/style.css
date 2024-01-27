@@ -211,7 +211,7 @@ img {
     top: 0;
     left: 100%;
     z-index: 80;
-    background-color: #fff;
+    background-color: #ffffffcc;
     transition: all 0.5s;
 }
 
@@ -231,7 +231,7 @@ img {
     box-sizing: border-box;
     color: #000;
     text-decoration: none;
-    padding: 2%;
+    padding: 2% 4%;
     position: relative;
     transition: all 0.5s;
     font-weight: bold;
@@ -269,6 +269,17 @@ img {
     line-height: 1.25;
     letter-spacing: 0.1em;
     font-family: 'Poppins', 'Noto Sans JP', 'Overpass', sans-serif;
+}
+
+.pc.time_text {
+    font-size: 2vw;
+    letter-spacing: 0.08em;
+    font-family: 'Overpass', sans-serif;
+    padding: 0 0 0 8vw;
+}
+
+.sp.time_text {
+    display: none;
 }
 
 .item_list_contents {
@@ -356,7 +367,7 @@ img {
     font-size: 1vw;
     letter-spacing: 0em;
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .news_contents {
@@ -478,7 +489,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.1em;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .profile_table>div:last-child {
@@ -580,6 +591,8 @@ img {
 .development_results_table {
     width: 64%;
     font-family: 'Noto Serif JP', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
 }
 
 .development_results_table>dt {
@@ -859,6 +872,7 @@ img {
 
     .menu-content ul li a {
         font-size: 6vw;
+        padding: 2% 8%;
     }
 
     .top_contents>div:first-child {
@@ -879,6 +893,17 @@ img {
 
     .title_text {
         font-size: 12vw;
+    }
+
+    .pc.time_text {
+        display: none;
+    }
+
+    .sp.time_text {
+        display: block;
+        font-size: 3.5vw;
+        letter-spacing: 0.05em;
+        padding: 0 0 0 8vw;
     }
 
     .item_list_contents {
@@ -992,6 +1017,11 @@ img {
     .client_list>div:last-child {
         border-bottom: solid 2px #000000;
         border-right: 0;
+    }
+
+    .development_results_table {
+        width: 82%;
+        letter-spacing: 0.06em;
     }
 
     .development_results_contents p:nth-child(1) {
