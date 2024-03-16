@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<title>合同会社A'ether Seeds - A'ether Seeds, LLC.</title>
+<meta name="robots" content="noindex" />
+<meta name="description" content="京都でゲーム制作を行っています">
+<meta name="viewport" content="width=device-width">
+<meta property="og:image" content="https://www.aether-seeds.co.jp/img/logo_name_ogp.png">
+
+<head>
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/style2.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="./image/favicon.ico?">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Overpass&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="top">
+    <div class="back_base">
+        <div class="back_img_top_area">
+            <img class="back_img_6" src="./image/back_6.jpg">
+            <div class="back_img_1 back_move">
+                <img src="./image/back_1.png">
+            </div>
+        </div>
+        <div class="back_img_center_area">
+            <img class="back_img" src="./image/back.jpg">
+            <div class="back_img_7">
+                <img src="./image/back_7.jpg">
+            </div>
+            <div class="back_img_2 back_move">
+                <img src="./image/back_2.png">
+            </div>
+            <div class="back_img_3 back_move">
+                <img src="./image/back_3.png">
+            </div>
+            <div class="back_img_4 back_move">
+                <img src="./image/back_4.png">
+            </div>
+            <div class="back_img_5_cover back_move">
+                <div class="back_img_5">
+                    <img src="./image/back_5.png">
+                </div>
+            </div>
+        </div>
+        <div class="back_img_bottom_area">
+            <img class="back_img_8" src="./image/back_8.jpg">
+        </div>
+    </div>
+    <div class="contants_base">
+        <header style="display: flex;justify-content: space-between;">
+            <div class="logo_area">
+                <img class="logo_img" src="./image/logo.png">
+            </div>
+            <div class="menu_area">
+
+                <div class="pc contact_button">
+                    <a href="#Contact" onclick="OnClickMenu()">Contact<span>―</span></a>
+                </div>
+
+                <div class="hamburger-menu">
+                    <input style="display: none;" type="checkbox" id="menu_btn_check">
+                    <label for="menu_btn_check" class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="#Message" onclick="OnClickMenu()">01 - Message</a>
+                            </li>
+                            <li>
+                                <a href="#News" onclick="OnClickMenu()">02 - News</a>
+                            </li>
+                            <li>
+                                <a href="#CompanyProfile" onclick="OnClickMenu()">03 - CompanyProfile</a>
+                            </li>
+                            <li>
+                                <a href="#Main_Client" onclick="OnClickMenu()">04 - Main Client</a>
+                            </li>
+                            <li>
+                                <a href="#Development_Results" onclick="OnClickMenu()">05 - Development Results</a>
+                            </li>
+                        </ul>
+                        <div class="sp contact_button">
+                            <a href="#Contact" onclick="OnClickMenu()">Contact<span>―</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="top_contents">
+            <div style="display: flex;">
+                <div class="title_contents">
+                    <div class="title_text">
+                        <p>stories</p>
+                        <p>are</p>
+                        <p>certainly</p>
+                        <p>there</p>
+                    </div>
+                </div>
+                <p class="sp time_text"></p>
+                <div class="item_list_contents">
+                    <div class="item_list">
+                        <div class="test_text_base">
+                            <div>Message - </div>
+                            <div class="test_text_size">01</div>
+                        </div>
+                        <p>News - 02</p>
+                        <p>CompanyProfile - 03</p>
+                        <p>Main Client - 04</p>
+                        <p>Development Results - 05</p>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .test_text_base {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+
+                .test_text_size {
+                    width: 2.6vw;
+                    text-align: center;
+                }
+
+                @media screen and (max-width: 750px) {
+                    .test_text_size {
+                        width: 3vw;
+                    }
+                }
+            </style>
+
+            <p class="pc time_text"></p>
+            <div class="writing_text">A'ether Seeds | Since 2022</div>
+            <div class="writing_text scroll">
+                <div>Scroll Down</div>
+                <div class="scroll_effect"></div>
+            </div>
+        </div>
+
+        <div id="Message" class="message_contents fade_contents">
+            <div class="message_frame">
+                <p>Message</p>
+                <p>物語は確かにそこにある。</p>
+                <p>
+                    時代の変遷により先人の諸説は淘汰されることがあります。<br><br>
+                    しかし、そこに注がれたであろう熱意は確かに存在し、現代でも見習うべきものだと考えています。<br><br>
+                    私達はそのような熱意に同調した「ゲームクリエイター」の法人を組織します。
+                </p>
+            </div>
+            <div class="writing_text">Message</div>
+        </div>
+
+        <div id="News" class="news_contents fade_contents">
+            <p>News</p>
+            <p>更新情報</p>
+            <div class="news_list">
+                <dl class="news_table">
+                    <div>
+                        <dt>2023 10.10</dt>
+                        <dd>開発実績（受託開発案件）を追加。詳しくは<a href="#work">こちら</a></dd>
+                    </div>
+                    <div>
+                        <dt>2023 08.24</dt>
+                        <dd>開発実績（実装／構築の事例）を追加。詳しくは<a href="#Development_Results">こちら</a></dd>
+                    </div>
+                    <div>
+                        <dt>2022 07.20</dt>
+                        <dd>登記変更を2022年7月4日付で実施。<br>
+                            ・業務執行社員として熊木 孝文を追記。<br>
+                            ・資本金について、40万円から391万円に増資を実施。</dd>
+                    </div>
+                    <div>
+                        <dt>2022 05.29</dt>
+                        <dd>本Webサイトを公開。</dd>
+                    </div>
+                </dl>
+            </div>
+            <div class="writing_text">News</div>
+        </div>
+        <div id="CompanyProfile" class="profile_contents fade_contents">
+            <p>Company Profile</p>
+            <p>会社概要</p>
+            <dl class="profile_table">
+                <div>
+                    <dt>商号 (カナ) / 法人番号</dt>
+                    <dd>合同会社A'ether Seeds (エーテルシード) / 5130003007850</dd>
+                </div>
+                <div>
+                    <dt>英語表記 / DUNS Number</dt>
+                    <dd>A'ether Seeds, LLC. / 49-830-9719</dd>
+                </div>
+                <div>
+                    <dt>設立年月日</dt>
+                    <dd>2022年4月1日</dd>
+                </div>
+                <div>
+                    <dt>事業内容</dt>
+                    <dd>各種アプリケーションソフトの企画、開発、制作、配信、管理、運営及び販売</dd>
+                </div>
+                <div>
+                    <dt>所在地</dt>
+                    <dd>〒606-0905 京都府京都市左京区松ケ崎杉ケ海道町4番地35</dd>
+                </div>
+                <div>
+                    <dt>代表社員</dt>
+                    <dd>谷岡 武</dd>
+                </div>
+                <div>
+                    <dt>業務執行社員</dt>
+                    <dd>小林 知也<br>
+                        金田 孝亮<br>
+                        木村 覚<br>
+                        熊木 孝文</dd>
+                </div>
+                <div>
+                    <dt>資本金</dt>
+                    <dd>391万円</dd>
+                </div>
+                <div>
+                    <dt>アクセスマップ</dt>
+                    <dd>〒606-0905 京都府京都市左京区松ケ崎杉ケ海道町４丁目３５番地<br>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.3545335732856!2d135.77735171551697!3d35.04787428034689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001083a19a7e28f%3A0x77d11df88768caf5!2z44CSNjA2LTA5MDUg5Lqs6YO95bqc5Lqs6YO95biC5bem5Lqs5Yy65p2-44Kx5bSO5p2J44Kx5rW36YGT55S677yU4oiS77yT77yV!5e0!3m2!1sja!2sjp!4v1653722726534!5m2!1sja!2sjp"
+                            width="650" height="350" class="map" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="map_button_contents">
+                            <a class="map_button"
+                                href="https://www.google.com/maps/place/%E3%80%92606-0905+%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E6%9D%BE%E3%82%B1%E5%B4%8E%E6%9D%89%E3%82%B1%E6%B5%B7%E9%81%93%E7%94%BA%EF%BC%94%E2%88%92%EF%BC%93%EF%BC%95/@35.047874,135.77954,16z/data=!4m6!3m5!1s0x6001083a19a7e28f:0x77d11df88768caf5!8m2!3d35.0478743!4d135.7795404!16s%2Fg%2F11c1b5z0jc?hl=ja&entry=ttu">
+                                <img src="./image/b_1.png">
+                                <img src="./image/b_2.png">
+                            </a>
+                        </div>
+                    </dd>
+                </div>
+            </dl>
+            <div class="writing_text">CompanyProfile</div>
+        </div>
+        <div id="Main_Client" class="main_client_contents fade_contents">
+            <p>Main Client</p>
+            <p>主要取引先</p>
+            <div class="client_list">
+                <div>
+                    <img src="./image/logo_1.jpg">
+                </div>
+                <div>
+                    <img src="./image/logo_1.jpg">
+                </div>
+                <div>
+                    <img src="./image/logo_1.jpg">
+                </div>
+            </div>
+            <div class="writing_text">Main Client</div>
+        </div>
+        <div id="Development_Results" class="development_results_contents fade_contents">
+            <p>Development Results</p>
+            <p>開発実績</p>
+            <dl class="development_results_table">
+                <dt>- 実装／構築の事例（非公開案件含むリリース済み案件より）</dt>
+                <dd>Unityを用いたアプリ内課金を伴うiOS/Android/WebGLゲームアプリの実装<br>
+                    Cocos Creatorを用いたモバイルブラウザにも対応した軽量なWebGLゲームアプリの実装<br>
+                    OpenCVと画像/アニメ素材を用いた動画合成サーバーの実装と素材デプロイフローの構築<br>
+                    AWSなどのクラウドサービスを用いたオートスケーラブルなアプリケーションサーバーおよびDBサーバーの構築</dd>
+
+                <dt>- 自社企画案件</dt>
+                <dd>企画進行中</dd>
+
+                <dt>- 受託開発案件（公開可能な案件のみ、リリース日降順、敬称略）</dt>
+                <dd id="work" class="works-items-frame">
+                    <h3>資産性ミリオンアーサー「シール工場」</h3>
+                    <div class="works-items">
+                        <div class="img">
+                            <img src="./image/work.jpg">
+                        </div>
+                        <div class="works-text">
+                            <dl>
+                                <dt>リリース日</dt>
+                                <dd>2023-04-20</dd>
+
+                                <dt>パブリッシャー</dt>
+                                <dd>株式会社スクウェア・エニックス</dd>
+
+                                <dt>開発協力範囲</dt>
+                                <dd>フロントエンド<br>
+                                    動画合成コアエンジン</dd>
+                            </dl>
+                            <div class="web_link_button_contents">
+                                <a class="web_link_button" href="https://shisansei.million-arthurs.com/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img src="./image/b_3.png">
+                                    <img src="./image/b_4.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+            <div class="writing_text">Development Results</div>
+        </div>
+        <div id="Contact" class="contact_contents fade_contents">
+            <p>Contact</p>
+            <p>ご質問や相談がある方は、下記よりお問い合わせください。</p>
+            <p>contact@aether-seeds.co.jp</p>
+            <div class="email_button_contents">
+                <a class="email_button" href="mailto:contact@aether-seeds.co.jp">
+                    <img src="./image/b_5.png">
+                    <img src="./image/b_6.png">
+                </a>
+            </div>
+            <div class="writing_text">Contact</div>
+        </div>
+
+        <a href="#top">
+            <div class="floating-banner top_button">
+                <img src="./image/b_7.png">
+                <img src="./image/b_8.png">
+            </div>
+        </a>
+
+        <footer>
+            <div style="display: flex;">
+                <div class="footer_contents">
+                    <div>
+                        <img src="./image/logo.png">
+                    </div>
+                    <div class="footer_link">
+                        <a href="#Message">Message</a>
+                    </div>
+                    <div class="footer_link">
+                        <a href="#News">News</a>
+                    </div>
+                    <div class="footer_link">
+                        <a href="#CompanyProfile">CompanyProfile</a>
+                    </div>
+                    <div class="footer_link">
+                        <a href="#Main_Client">Main Client</a>
+                    </div>
+                    <div class="footer_link">
+                        <a href="#Development_Results">Development Results</a>
+                    </div>
+                    <div class="footer_link">
+                        <a href="#Contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">Copyright © A'ether Seeds. All Rights Reserved.</div>
+        </footer>
+    </div>
+</body>
+
+<footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="./js/js.js"></script>
+</footer>
+
+</html>
