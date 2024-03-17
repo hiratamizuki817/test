@@ -169,8 +169,8 @@ img {
 * メニュー
 */
 .hamburger-menu {
-    width: 55px;
-    height: 55px;
+    width: 30%;
+    aspect-ratio: 1 / 1;
 }
 
 .menu-btn {
