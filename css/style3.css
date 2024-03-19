@@ -209,10 +209,9 @@ img {
 }
 
 #menu_btn_check:checked~.menu-btn span:nth-of-type(1) {
-    top: 40%;
-    left: 26%;
-    transform: translateY(6px) rotate(-45deg);
-    width: 50%;
+    top: 50%;
+    transform: rotate(-45deg);
+    width: 60%;
 }
 
 #menu_btn_check:checked~.menu-btn span:nth-of-type(2) {
@@ -221,10 +220,9 @@ img {
 }
 
 #menu_btn_check:checked~.menu-btn span:nth-of-type(3) {
-    top: 56%;
-    left: 26%;
-    transform: translateY(-6px) rotate(45deg);
-    width: 50%;
+    top: 50%;
+    transform: rotate(45deg);
+    width: 60%;
 }
 
 
@@ -969,13 +967,6 @@ img {
     .hamburger-menu {
         width: 100%;
         height: 100%;
-    }
-
-    #menu_btn_check:checked~.menu-btn span:nth-of-type(1) {
-        top: 34%;
-        left: 26%;
-        transform: translateY(6px) rotate(-45deg);
-        width: 50%;
     }
 
     .menu-content ul {
